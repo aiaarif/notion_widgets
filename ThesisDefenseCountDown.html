@@ -18,13 +18,28 @@ body{
   font-family: 'Lato', sans-serif;
   font-size: .7em;
   letter-spacing: 5px;
+  width:582px;
+  border-radius: 5px;
+  background: #222;
+  
 }
+
 
 .days, .hours, .minutes, .seconds {
   display: inline-block;
   padding: 20px;
   width: 100px;
   border-radius: 5px;
+}
+
+.countdown_title{
+  
+  display: inline-block;
+
+  padding: 40px 0;
+  width: 100%;
+  border-radius: 5px;
+  font-size:2em;
 }
 
 .days {
@@ -85,9 +100,10 @@ body{
     </style>
 </head>
 <body>
-    
-<div id="timer">
 
+<div id="timer">
+    <div class = "countdown_title">
+Time left to defend thesis:</div>
     <div class="days"> 
         <div id="days" class="numbers "> </div>days</div> 
       <div class="hours"> 
